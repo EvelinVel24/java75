@@ -1,0 +1,8 @@
+<div class="error-messages">
+    <ul>
+        <li th:each="error : ${#fields.errors('*')}" 
+            th:text="${error}" 
+            class="error-message">
+        </li>
+    </ul>
+</div>
